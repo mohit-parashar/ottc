@@ -1,0 +1,37 @@
+# Migration configuration for basic page.
+id: standing
+label: standing
+migration_group: standing
+migration_dependencies: {}
+
+source:
+  plugin: json_source
+  path: https://api.myjson.com/bins/um6gh
+  headers:
+    Accept: 'application/json'
+  identifier: upc
+  identifierDepth: 0
+  fields:
+    - path
+    - name
+    - description
+
+destination:
+  plugin: entity:node
+
+process:
+  type:
+    plugin: default_value
+    default_value: page
+
+  title: name
+  path: path
+  body: description
+  field_price: price
+
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0

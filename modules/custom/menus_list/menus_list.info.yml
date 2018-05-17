@@ -1,0 +1,6 @@
+name: Menu Custome URL
+type: module
+core: 8.x
+description: 'Menu custome url'
+package: OTC
+# core: 8.x

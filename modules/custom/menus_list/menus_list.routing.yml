@@ -1,0 +1,18 @@
+menus_list.custom_url:
+  path: 'api/{menusname}/mega-menu/{depths}'
+  defaults:
+    _controller: '\Drupal\menus_list\Controller\MenusList::menu_url_list'
+    depths: '1'
+    _title: 'Menu URL'
+  requirements:
+    _permission: 'access content'
+menus_list.custom_url:
+  path: 'api/{menusname}/mega-menu/'
+  defaults:
+    _controller: '\Drupal\menus_list\Controller\MenusList::menu_url_list'
+    depths: '1'
+    _title: 'Menu URL'
+  requirements:
+    _permission: 'access content'
+    
+   

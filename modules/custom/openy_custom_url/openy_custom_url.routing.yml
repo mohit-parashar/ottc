@@ -1,0 +1,7 @@
+openy_custom_url.custom_url:
+  path: 'openy-custome-url/abouterror'
+  defaults:
+    _controller: '\Drupal\openy_custom_url\Controller\OpenyCustomUrl::abouterror'
+    _title: 'Migrate URL'
+  requirements:
+    _permission: 'access content'

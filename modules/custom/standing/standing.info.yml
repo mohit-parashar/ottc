@@ -1,0 +1,6 @@
+name: Standing
+description: 'Use to import node using import plus module'
+core: 8.x
+type: module
+dependencies:
+  - migrate_plus
